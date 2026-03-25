@@ -61,7 +61,8 @@ No pip installs, no virtual environments, no dependencies beyond the Python stan
 ## File Structure
 
 ```
-├── recipe_manager_gui.py   ← Main application — run this file
+├── ui.py   ← Main application — run this file
+|__ recipe_manager.py       <- Console version
 ├── users.json              ← Created automatically on first registration
 ├── recipes.json            ← Created automatically when you add a recipe
 ├── meal_plan.json          ← Created automatically when you save a plan
@@ -125,7 +126,7 @@ sudo pacman -S tk
 Try using `py` instead:
 
 ```bash
-py recipe_manager_gui.py
+py ui.py
 ```
 
 Or ensure Python is added to your system PATH when installing.
